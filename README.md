@@ -16,7 +16,9 @@ Maximum DC Current per I/O pin: 40.0mA
 ## Setup instructions
 To operate the device, connect VCC (Pin 20) to a voltage source that is within the operating
 voltage range (1.8V to 5.5V), and GND (Pin 10) to ground. Press button to play the song
-interval. Refer to the KiCAD schematic for full details.
+interval. 
+
+Refer to the KiCAD schematic for details: ece332-fur-elise/FurEliseGreetingCardKiCAD/FurEliseGreetingCardKiCAD.pdf
 
 
 
