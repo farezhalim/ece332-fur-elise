@@ -1,0 +1,187 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:switches
+LIBS:PIEZO
+LIBS:FurEliseGreetingCardKiCAD-cache
+EELAYER 25 0
+EELAYER END
+$Descr User 7874 5906
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINY2313-P FurEliseCardController
+U 1 1 58AF2FB7
+P 2700 2650
+F 0 "FurEliseCardController" H 1750 3650 50  0000 C CNN
+F 1 "ATTINY2313-P" H 3500 1750 50  0000 C CNN
+F 2 "DIP20" H 2700 2650 50  0000 C CIN
+F 3 "" H 2700 2650 50  0000 C CNN
+	1    2700 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58AF2FDF
+P 2700 3650
+F 0 "#PWR?" H 2700 3400 50  0001 C CNN
+F 1 "GND" H 2700 3500 50  0000 C CNN
+F 2 "" H 2700 3650 50  0000 C CNN
+F 3 "" H 2700 3650 50  0000 C CNN
+	1    2700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 58AF3012
+P 2700 1550
+F 0 "#PWR?" H 2700 1400 50  0001 C CNN
+F 1 "VCC" H 2700 1700 50  0000 C CNN
+F 2 "" H 2700 1550 50  0000 C CNN
+F 3 "" H 2700 1550 50  0000 C CNN
+	1    2700 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push SW1
+U 1 1 58AF321A
+P 4550 3200
+F 0 "SW1" H 4600 3300 50  0000 L CNN
+F 1 "SW_Push" H 4550 3140 50  0000 C CNN
+F 2 "" H 4550 3400 50  0000 C CNN
+F 3 "" H 4550 3400 50  0000 C CNN
+	1    4550 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58AF3275
+P 4550 3500
+F 0 "#PWR?" H 4550 3250 50  0001 C CNN
+F 1 "GND" H 4550 3350 50  0000 C CNN
+F 2 "" H 4550 3500 50  0000 C CNN
+F 3 "" H 4550 3500 50  0000 C CNN
+	1    4550 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PIEZO PIEZO1
+U 1 1 58AF3349
+P 4850 1550
+F 0 "PIEZO1" H 4950 1600 40  0000 L CNN
+F 1 "PIEZO" H 4950 1500 40  0000 L CNN
+F 2 "" H 4850 1550 60  0000 C CNN
+F 3 "" H 4850 1550 60  0000 C CNN
+	1    4850 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L PIEZO PIEZO2
+U 1 1 58AF33C8
+P 5500 1550
+F 0 "PIEZO2" H 5600 1600 40  0000 L CNN
+F 1 "PIEZO" H 5600 1500 40  0000 L CNN
+F 2 "" H 5500 1550 60  0000 C CNN
+F 3 "" H 5500 1550 60  0000 C CNN
+	1    5500 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2750 4550 2750
+$Comp
+L R 200R
+U 1 1 58AF3446
+P 4850 1850
+F 0 "200R" V 4930 1850 50  0000 C CNN
+F 1 "R" V 4850 1850 50  0000 C CNN
+F 2 "" V 4780 1850 50  0000 C CNN
+F 3 "" H 4850 1850 50  0000 C CNN
+	1    4850 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L R 200R
+U 1 1 58AF3492
+P 5500 1850
+F 0 "200R" V 5580 1850 50  0000 C CNN
+F 1 "R" V 5500 1850 50  0000 C CNN
+F 2 "" V 5430 1850 50  0000 C CNN
+F 3 "" H 5500 1850 50  0000 C CNN
+	1    5500 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2050 4850 2050
+Wire Wire Line
+	4850 2050 4850 2000
+Wire Wire Line
+	3850 2150 5500 2150
+Wire Wire Line
+	5500 2150 5500 2000
+Wire Wire Line
+	4550 2750 4550 3000
+Wire Wire Line
+	4550 3400 4550 3500
+$Comp
+L GND #PWR?
+U 1 1 58AF374F
+P 4850 1400
+F 0 "#PWR?" H 4850 1150 50  0001 C CNN
+F 1 "GND" H 4850 1250 50  0000 C CNN
+F 2 "" H 4850 1400 50  0000 C CNN
+F 3 "" H 4850 1400 50  0000 C CNN
+	1    4850 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58AF3775
+P 5500 1400
+F 0 "#PWR?" H 5500 1150 50  0001 C CNN
+F 1 "GND" H 5500 1250 50  0000 C CNN
+F 2 "" H 5500 1400 50  0000 C CNN
+F 3 "" H 5500 1400 50  0000 C CNN
+	1    5500 1400
+	-1   0    0    1   
+$EndComp
+Text Notes 4300 5300 0    60   ~ 0
+23/02/2017\n
+Text Notes 3650 5150 0    79   Italic 16
+FurEliseGreetingCard\n
+$EndSCHEMATC

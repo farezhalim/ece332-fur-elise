@@ -1,0 +1,275 @@
+
+FurEliseGreetingCard.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000164  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00800060  00800060  000001b8  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .comment      00000030  00000000  00000000  000001b8  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000001e8  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000030  00000000  00000000  00000228  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000006e6  00000000  00000000  00000258  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000537  00000000  00000000  0000093e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000301  00000000  00000000  00000e75  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000044  00000000  00000000  00001178  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000037f  00000000  00000000  000011bc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000024a  00000000  00000000  0000153b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000050  00000000  00000000  00001785  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	5d c0       	rjmp	.+186    	; 0xbc <__ctors_end>
+   2:	62 c0       	rjmp	.+196    	; 0xc8 <__bad_interrupt>
+   4:	61 c0       	rjmp	.+194    	; 0xc8 <__bad_interrupt>
+   6:	60 c0       	rjmp	.+192    	; 0xc8 <__bad_interrupt>
+   8:	5f c0       	rjmp	.+190    	; 0xc8 <__bad_interrupt>
+   a:	5e c0       	rjmp	.+188    	; 0xc8 <__bad_interrupt>
+   c:	5d c0       	rjmp	.+186    	; 0xc8 <__bad_interrupt>
+   e:	5c c0       	rjmp	.+184    	; 0xc8 <__bad_interrupt>
+  10:	5b c0       	rjmp	.+182    	; 0xc8 <__bad_interrupt>
+  12:	5a c0       	rjmp	.+180    	; 0xc8 <__bad_interrupt>
+  14:	59 c0       	rjmp	.+178    	; 0xc8 <__bad_interrupt>
+  16:	58 c0       	rjmp	.+176    	; 0xc8 <__bad_interrupt>
+  18:	57 c0       	rjmp	.+174    	; 0xc8 <__bad_interrupt>
+  1a:	56 c0       	rjmp	.+172    	; 0xc8 <__bad_interrupt>
+  1c:	55 c0       	rjmp	.+170    	; 0xc8 <__bad_interrupt>
+  1e:	54 c0       	rjmp	.+168    	; 0xc8 <__bad_interrupt>
+  20:	53 c0       	rjmp	.+166    	; 0xc8 <__bad_interrupt>
+  22:	52 c0       	rjmp	.+164    	; 0xc8 <__bad_interrupt>
+  24:	51 c0       	rjmp	.+162    	; 0xc8 <__bad_interrupt>
+
+00000026 <__trampolines_end>:
+  26:	01 01       	movw	r0, r2
+  28:	01 01       	movw	r0, r2
+  2a:	01 01       	movw	r0, r2
+  2c:	01 01       	movw	r0, r2
+  2e:	02 01       	movw	r0, r4
+  30:	01 01       	movw	r0, r2
+  32:	01 02       	muls	r16, r17
+  34:	01 01       	movw	r0, r2
+  36:	01 01       	movw	r0, r2
+  38:	02 01       	movw	r0, r4
+  3a:	01 01       	movw	r0, r2
+  3c:	01 01       	movw	r0, r2
+  3e:	01 01       	movw	r0, r2
+  40:	01 01       	movw	r0, r2
+  42:	01 02       	muls	r16, r17
+  44:	01 01       	movw	r0, r2
+  46:	01 01       	movw	r0, r2
+  48:	02 01       	movw	r0, r4
+  4a:	01 01       	movw	r0, r2
+  4c:	01 04       	cpc	r0, r1
+  4e:	01 01       	movw	r0, r2
+  50:	01 01       	movw	r0, r2
+  52:	01 01       	movw	r0, r2
+  54:	01 01       	movw	r0, r2
+  56:	02 01       	movw	r0, r4
+
+00000058 <melody_voice1>:
+  58:	2e 31 2e 31 2e 3e 34 3a 46 00 76 5d 46 3e 00 5d     .1.1.>4:F.v]F>.]
+  68:	4a 3e 3a 00 5d 2e 31 2e 31 2e 3e 34 3a 46 00 76     J>:.].1.1.>4:F.v
+  78:	5d 46 3e 00 5d 3a 3e 46 2e 31 2e 31 2e 3e 34 3a     ]F>.]:>F.1.1.>4:
+  88:	46 00                                               F.
+
+0000008a <melody_voice0>:
+  8a:	5d 63 5d 63 5d 7d 69 76 8d 00 ed bc 8d 7d 00 bc     ]c]c]}iv.....}..
+  9a:	95 7d 76 00 bc 5d 63 5d 63 5d 7d 69 76 8d 00 ed     .}v..]c]c]}iv...
+  aa:	bc 8d 7d 00 bc 76 7d 8d 5d 63 5d 63 5d 7d 69 76     ..}..v}.]c]c]}iv
+  ba:	8d 00                                               ..
+
+000000bc <__ctors_end>:
+  bc:	11 24       	eor	r1, r1
+  be:	1f be       	out	0x3f, r1	; 63
+  c0:	cf ed       	ldi	r28, 0xDF	; 223
+  c2:	cd bf       	out	0x3d, r28	; 61
+  c4:	1a d0       	rcall	.+52     	; 0xfa <main>
+  c6:	4c c0       	rjmp	.+152    	; 0x160 <_exit>
+
+000000c8 <__bad_interrupt>:
+  c8:	9b cf       	rjmp	.-202    	; 0x0 <__vectors>
+
+000000ca <my_delay_ms>:
+const uint8_t melody_voice1[] PROGMEM = {0x2E, 0x31, 0x2E, 0x31, 0x2E, 0x3E, 0x34, 0x3A, 0x46, 0x00, 0x76, 0x5D, 0x46, 0x3E, 0x00, 0x5D, 0x4A, 0x3E, 0x3A, 0x00, 0x5D, 0x2E, 0x31, 0x2E, 0x31, 0x2E, 0x3E, 0x34, 0x3A, 0x46, 0x00, 0x76, 0x5D, 0x46, 0x3E, 0x00, 0x5D, 0x3A, 0x3E, 0x46, 0x2E, 0x31, 0x2E, 0x31, 0x2E, 0x3E, 0x34, 0x3A, 0x46, 0x00};
+const uint8_t delays[] PROGMEM = {1,1,1,1,1,1,1,1,2,1,1,1,1,2,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,2,1,1,1,1,4,1,1,1,1,1,1,1,1,2,1};
+
+
+void my_delay_ms(uint8_t n) {
+	while(n--) {
+  ca:	88 23       	and	r24, r24
+  cc:	59 f0       	breq	.+22     	; 0xe4 <__stack+0x5>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  ce:	2f e5       	ldi	r18, 0x5F	; 95
+  d0:	3a ee       	ldi	r19, 0xEA	; 234
+  d2:	90 e0       	ldi	r25, 0x00	; 0
+  d4:	21 50       	subi	r18, 0x01	; 1
+  d6:	30 40       	sbci	r19, 0x00	; 0
+  d8:	90 40       	sbci	r25, 0x00	; 0
+  da:	e1 f7       	brne	.-8      	; 0xd4 <my_delay_ms+0xa>
+  dc:	00 c0       	rjmp	.+0      	; 0xde <my_delay_ms+0x14>
+  de:	00 00       	nop
+  e0:	81 50       	subi	r24, 0x01	; 1
+  e2:	a9 f7       	brne	.-22     	; 0xce <my_delay_ms+0x4>
+  e4:	08 95       	ret
+
+000000e6 <play_note>:
+	}
+}
+
+void play_note(uint8_t compareLow, uint8_t compareHigh, uint8_t delay) {
+	// initialize counter
+	TCNT0 = 0;
+  e6:	12 be       	out	0x32, r1	; 50
+	TCNT1H = 0;
+  e8:	1d bc       	out	0x2d, r1	; 45
+	TCNT1L = 0;
+  ea:	1c bc       	out	0x2c, r1	; 44
+
+	// set compare values for low and high octave
+	OCR0A = compareLow;
+  ec:	86 bf       	out	0x36, r24	; 54
+	OCR1A = compareHigh;
+  ee:	70 e0       	ldi	r23, 0x00	; 0
+  f0:	7b bd       	out	0x2b, r23	; 43
+  f2:	6a bd       	out	0x2a, r22	; 42
+	
+	my_delay_ms(delay);
+  f4:	84 2f       	mov	r24, r20
+  f6:	e9 df       	rcall	.-46     	; 0xca <my_delay_ms>
+  f8:	08 95       	ret
+
+000000fa <main>:
+
+
+
+int main(void) {
+	// one input from the button
+	DDRD &= ~(1 << PD0); // Makes first pin of PORTD as Input
+  fa:	88 98       	cbi	0x11, 0	; 17
+	PORTD |= (1 << PD0); //define pull-up and set output high
+  fc:	90 9a       	sbi	0x12, 0	; 18
+
+	// two outputs to buzzers
+	DDRB |= (1 << PB2); // set PB2 as an output = OC0A
+  fe:	ba 9a       	sbi	0x17, 2	; 23
+	DDRB |= (1 << PB3); // OC1A
+ 100:	bb 9a       	sbi	0x17, 3	; 23
+			uint8_t voice1;
+			uint8_t voice2;
+			uint8_t delay;
+
+			// call the play_note function with compare and delay values
+			for (int noteCounter = 0; noteCounter < count; noteCounter++) {
+ 102:	00 e0       	ldi	r16, 0x00	; 0
+ 104:	10 e0       	ldi	r17, 0x00	; 0
+	DDRB |= (1 << PB3); // OC1A
+
+	// set PUD to zero which it already is in MCUSR - check data sheet
+    while (1) {
+
+		if ((PIND & 1) == 0) {				
+ 106:	80 99       	sbic	0x10, 0	; 16
+ 108:	23 c0       	rjmp	.+70     	; 0x150 <main+0x56>
+			// set timer to Fast PWM mode, pre-scaler = 8
+			TCCR0A |= (1 << WGM01) | (1 << COM0A0) | (1 << COM0B0); //CTC mode, toggle
+ 10a:	80 b7       	in	r24, 0x30	; 48
+ 10c:	82 65       	ori	r24, 0x52	; 82
+ 10e:	80 bf       	out	0x30, r24	; 48
+			TCCR0B |= (1 << WGM02) | (1 << CS01); //CTC mode, divide by 8
+ 110:	83 b7       	in	r24, 0x33	; 51
+ 112:	8a 60       	ori	r24, 0x0A	; 10
+ 114:	83 bf       	out	0x33, r24	; 51
+			
+			TCCR1A |= (1 << COM1A0); //toggle
+ 116:	8f b5       	in	r24, 0x2f	; 47
+ 118:	80 64       	ori	r24, 0x40	; 64
+ 11a:	8f bd       	out	0x2f, r24	; 47
+			TCCR1B |= (1 << WGM12) | (1 << CS11); //CTC mode, divide by 8
+ 11c:	8e b5       	in	r24, 0x2e	; 46
+ 11e:	8a 60       	ori	r24, 0x0A	; 10
+ 120:	8e bd       	out	0x2e, r24	; 46
+			
+			//intialize output compare registers
+			OCR0A = 0;
+ 122:	16 be       	out	0x36, r1	; 54
+			OCR1A = 0;
+ 124:	1b bc       	out	0x2b, r1	; 43
+ 126:	1a bc       	out	0x2a, r1	; 42
+			uint8_t voice1;
+			uint8_t voice2;
+			uint8_t delay;
+
+			// call the play_note function with compare and delay values
+			for (int noteCounter = 0; noteCounter < count; noteCounter++) {
+ 128:	c0 2f       	mov	r28, r16
+ 12a:	d1 2f       	mov	r29, r17
+ 12c:	fe 01       	movw	r30, r28
+ 12e:	e6 57       	subi	r30, 0x76	; 118
+ 130:	ff 4f       	sbci	r31, 0xFF	; 255
+				voice1 = pgm_read_byte(&melody_voice0[noteCounter]);
+ 132:	84 91       	lpm	r24, Z
+ 134:	fe 01       	movw	r30, r28
+ 136:	e8 5a       	subi	r30, 0xA8	; 168
+ 138:	ff 4f       	sbci	r31, 0xFF	; 255
+				voice2 = pgm_read_byte(&melody_voice1[noteCounter]);
+ 13a:	64 91       	lpm	r22, Z
+ 13c:	fe 01       	movw	r30, r28
+ 13e:	ea 5d       	subi	r30, 0xDA	; 218
+ 140:	ff 4f       	sbci	r31, 0xFF	; 255
+				delay = pgm_read_byte(&delays[noteCounter]);
+ 142:	44 91       	lpm	r20, Z
+				play_note(voice1, voice2, delay);
+ 144:	d0 df       	rcall	.-96     	; 0xe6 <play_note>
+			uint8_t voice1;
+			uint8_t voice2;
+			uint8_t delay;
+
+			// call the play_note function with compare and delay values
+			for (int noteCounter = 0; noteCounter < count; noteCounter++) {
+ 146:	21 96       	adiw	r28, 0x01	; 1
+ 148:	c2 33       	cpi	r28, 0x32	; 50
+ 14a:	d1 05       	cpc	r29, r1
+ 14c:	79 f7       	brne	.-34     	; 0x12c <main+0x32>
+ 14e:	db cf       	rjmp	.-74     	; 0x106 <main+0xc>
+				play_note(voice1, voice2, delay);
+				
+				} 
+			} else {
+				//turn off timers
+				TCCR0A = 0;
+ 150:	10 be       	out	0x30, r1	; 48
+				TCCR0B = 0;
+ 152:	13 be       	out	0x33, r1	; 51
+				TCCR1A = 0;
+ 154:	1f bc       	out	0x2f, r1	; 47
+				TCCR1B = 0;
+ 156:	1e bc       	out	0x2e, r1	; 46
+				OCR0A = 0;
+ 158:	16 be       	out	0x36, r1	; 54
+				OCR1A = 0;
+ 15a:	1b bc       	out	0x2b, r1	; 43
+ 15c:	1a bc       	out	0x2a, r1	; 42
+ 15e:	d3 cf       	rjmp	.-90     	; 0x106 <main+0xc>
+
+00000160 <_exit>:
+ 160:	f8 94       	cli
+
+00000162 <__stop_program>:
+ 162:	ff cf       	rjmp	.-2      	; 0x162 <__stop_program>
